@@ -39,7 +39,7 @@ export default function AbilitiesCard() {
 
   return (
     <div className="w-full md:w-1/2 p-2">
-      <Card sx={{ minWidth: 275 }}>
+      <Card sx={{ minWidth: 275, background: "aliceblue", color: "black", borderRadius: 10 }}>
         <CardContent>
           <List
             dense
@@ -53,12 +53,12 @@ export default function AbilitiesCard() {
                     <ListItemAvatar>
                       <img
                         alt={value}
-                        style={{ marginTop: "10px" }}
+                        style={{ width: "30px", height: "30px" }}
                         src={require(`../../assets/${value}.png`)}
                       />
                     </ListItemAvatar>
                     <Box key={value}>
-                      <Typography variant="h6" sx={{ ml: 1 }} className="nomes">
+                      <Typography variant="h6" sx={{ ml: 1}} className="nomes">
                         {value} : {statValue !== false ? statValue : "N/A"}
                       </Typography>
                       {statValue !== false && (

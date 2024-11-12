@@ -50,7 +50,7 @@ export default function SearchInput() {
         p: 1,
         mr: { xs: 0, sm: 1 },
         mt: { xs: 2, sm: 0 },
-        borderRadius: 1,
+        borderRadius: 2,
         backgroundColor: "primary.contrastText",
       }}
       component="form"
